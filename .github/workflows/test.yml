@@ -1,7 +1,11 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
+on: push
 
-language: bash
-script:
-  - ./gcm-test.sh
+jobs:
+  language: bash
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v1
+    - run: ./gcm-test.sh
