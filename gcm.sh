@@ -1,14 +1,11 @@
 #!/bin/bash
 
 #input
-echo "自然数を入力してください"
-read x
-echo "自然数を入力してください"
-read b
+x=$1
+b=$2
 
 if [ $# -ne 2 ];then
-	echo "引数は2個入力してください" 1>&2
-	exit 1
+	echo "引数は2個入力してください" && exit 1
 fi
 
  expr "$x" : "[0-9]*$" >&/dev/null
