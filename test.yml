@@ -1,8 +1,0 @@
-name:test.yml
-
-language: bash
-jobs:
-  check-bats-version:
-    runs-on: ubuntu-latest
-    steps: 
-	 - ./gcm-test.sh
