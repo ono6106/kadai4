@@ -6,6 +6,11 @@ read x
 echo "自然数を入力してください"
 read b
 
+if [ $# -ne 2 ];then
+	echo "引数は2個入力してください" 1>&2
+	exit 1
+fi
+
  expr "$x" : "[0-9]*$" >&/dev/null
  case  $? in 
  1)echo "$xは自然数ではありません" && exit 1;;
@@ -36,7 +41,6 @@ done
 
 if ((a==0));then
 	echo $x
-	break
 elif ((a==1));then
 	echo "1"
 elif ((x/a >= a));then
