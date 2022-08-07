@@ -1,3 +1,0 @@
-language:bash
-script:
-- ./gcm-test.sh
