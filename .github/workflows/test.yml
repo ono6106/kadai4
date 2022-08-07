@@ -4,7 +4,8 @@ name: CI
 on: push
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
+  build:
+    runs-on: ubuntu-latest
+    steps:
     - uses: actions/checkout@v1
     - run: ./gcm-test.sh
