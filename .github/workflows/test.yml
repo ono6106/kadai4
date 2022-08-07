@@ -3,7 +3,6 @@
 name: CI
 
 language: bash
-    runs-on: ubuntu-latest
-
-  script:
+runs-on: ubuntu-latest
+script:
   - ./gcm-test.sh
