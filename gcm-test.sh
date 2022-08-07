@@ -42,7 +42,7 @@ echo "-4は自然数ではありません" > ${ans}
 diff ${ans} ${result} || exit 1
 
 #入力3個
-echo"引数は2個入力してください" > ${ans}
+echo "引数は2個入力してください" > ${ans}
 ./gcm.sh 1 2 3 > ${result}
 diff ${ans} ${result} || exit 1
 #入力1個
